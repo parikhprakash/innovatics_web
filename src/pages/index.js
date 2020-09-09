@@ -1,50 +1,35 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import HomeHero from '../components/home_hero'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HomeServices from '../components/home_services'
 import { rhythm } from "../utils/typography"
+import HeroMovement from "../components/home_movement"
+import HomeTestimonials from "../components/home_testimonials"
+import HomeTeam from "../components/home_team"
+import HomeBlog from "../components/home_blog"
+import HomeCTA from "../components/home_cta"
 
-const BlogIndex = ({ data, location }) => {
+const InnovaticsIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <SEO title="Home" />
+      <HomeHero></HomeHero>
+      <HomeServices></HomeServices>
+      <HeroMovement></HeroMovement>
+      <HomeTestimonials></HomeTestimonials>
+      <HomeTeam></HomeTeam>
+      <HomeBlog></HomeBlog>
+      <HomeCTA></HomeCTA>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default InnovaticsIndex
 
 export const pageQuery = graphql`
   query {

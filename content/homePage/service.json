@@ -1,0 +1,30 @@
+{
+    "title1":"Services we can help",
+    "title2":"you with",
+    "services":[
+        {
+            "title":"Product Development",
+            "description":"We are a one-stop shop for your web, mobile, or desktop software development and scale up requirements. Our experienced team of experts can empower you throughout the complete software development life cycle and beyond that.",
+            "link":"services/product-development",
+            "imagePath":"/images/icons/icon-03.svg"
+        },
+        {
+            "title":"Digital Transformation",
+            "description":"We build aggregated digital solutions to empower businesses. Our innovative intellect amalgamates technological advancement to harness enterprises.",
+            "link":"services/digital-transformation",
+            "imagePath":"/images/icons/icon-03.svg"
+        },
+        {
+            "title":"Analytics",
+            "description":"Make your business agile, safeguarded, and stronger with AI solutions. We can help you add automation in your business process to maximize ROIs ",
+            "link":"services/analytics",
+            "imagePath":"/images/icons/icon-03.svg"
+        },
+        {
+            "title":"Digital Marketing",
+            "description":"Digital Marketing Solutions..",
+            "link":"services/digital-marketing",
+            "imagePath":"/images/icons/icon-03.svg"
+        }
+    ]
+}

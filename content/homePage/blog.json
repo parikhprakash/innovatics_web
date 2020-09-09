@@ -1,0 +1,20 @@
+{
+    "title":"Latest stories",
+    "description":"Whats going on descriptionss...",
+    "fetured_blogs":[
+        {
+            "image_path":"/blog-images/blog-img-01.jpg",
+            "category":"ConversationalAI",
+            "title":"How Chatbot Redefines Customer Services?",
+            "description":"Machine Learning (ML) and Artificial Intelligence (AI) are paving ways to all aspects of the business.",
+            "link":"blogs/blog1"
+        },
+        {
+            "image_path":"/blog-images/blog-img-02.jpg",
+            "category":"Digital Transformation",
+            "title":"How Technologies Are Augmenting Different Businesses?",
+            "description":"Change is the only constant in this world. All businesses, regardless of size and industry vertical go through various phases and during these distinct phases",
+            "link":"blogs/blog2"
+        }
+    ]
+}

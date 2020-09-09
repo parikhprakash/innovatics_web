@@ -1,0 +1,30 @@
+{
+    "services":[
+        {
+            "name":"Product Development",
+            "link":"services/product-development"
+        },
+        {
+            "name":"Analytics",
+            "link":"services/analytics"
+        }
+    ],
+    "resources":[
+        {
+            "name":"Blogs",
+            "link":"blogs"
+        },
+        {
+            "name":"Case Study",
+            "link":"case-study"
+        }
+        
+    ],
+    "support":[
+        {
+            "name":"constact",
+            "link":"contact-us"
+        }
+    ]
+
+}

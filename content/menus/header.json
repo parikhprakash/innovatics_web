@@ -1,0 +1,54 @@
+[
+    {
+        "name":"Home",
+        "link":"/",
+        "SubMenu":[]
+    },
+    {
+        "name":"Services",
+        "link":"/services",
+        "SubMenu":[
+            {
+                "name":"Product Development",
+                "link":"/services/product-development"
+            },
+            {
+                "name":"analytics",
+                "link":"/services/analytics"
+            },
+            {
+                "name":"Digital Marketing",
+                "link":"/services/digital-marketing"
+            },
+            {
+                "name":"Hire a Team",
+                "link":"/services/hire-a-team"
+            }
+        ]
+    },
+    {
+        "name":"About Us",
+        "link":"/about-us",
+        "SubMenu":[]
+    },
+    {
+        "name":"Resources",
+        "link":"#",
+        "SubMenu":[
+            {
+                "name":"Blogs",
+                "link":"blogs"
+            },
+            {
+
+                "name":"Case Study",
+                "link":"case-study"
+            }
+        ]
+    },
+    {
+        "name":"Contact Us",
+        "link":"contact-us",
+        "SubMenu":[]
+    }
+]

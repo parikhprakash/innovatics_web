@@ -1,0 +1,42 @@
+{
+    "title":"",
+    "description":"",
+    "sections":[
+        {
+            "title":"Product Development",
+            "name":"product-development",
+            "subServices":[
+                {
+                    "title":"subService1",
+                    "description":"Sub Service Description",
+                    "link":"services/subservice1",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"subService2",
+                    "description":"Sub Service Description",
+                    "link":"services/subservice2",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        },
+        {
+            "title":"Analytics",
+            "name":"analytics",
+            "subServices":[
+                {
+                    "title":"subService1",
+                    "description":"Sub Service Description",
+                    "link":"services/subservice1",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"subService2",
+                    "description":"Sub Service Description",
+                    "link":"services/subservice2",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        }
+    ]
+}

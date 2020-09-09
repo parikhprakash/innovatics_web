@@ -1,0 +1,20 @@
+{
+    "title":"From getting started",
+    "description":"Testimonial description please",
+    "testimonials":[
+        {
+            "name":"Ronak Thakkar",
+            "title":"CEO@ Translate By Humans",
+            "short_desc":"Everything from design to implementation has been a breeze with the dedicated team at Innovatics. Innovatics has been a great partner in ensuring our product comes to life!",
+            "image":"https://www.translatebyhumans.com/webroot/images/logo.svg",
+            "link":"case-study/case1"
+        },
+        {
+            "name":"",
+            "title":"",
+            "short_desc":"",
+            "image":"",
+            "link":"case-study/case1"
+        }
+    ]
+}
