@@ -13,7 +13,6 @@ import HomeCTA from "../components/home_cta"
 
 const InnovaticsIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
