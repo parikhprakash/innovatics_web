@@ -10,19 +10,27 @@
         "SubMenu":[
             {
                 "name":"Product Development",
-                "link":"/services/product-development"
+                "link":"services/#product-development"
             },
             {
-                "name":"analytics",
-                "link":"/services/analytics"
+                "name":"Analytics",
+                "link":"/services/#analytics"
+            },
+            {
+                "name":"Automation",
+                "link":"/services/#automation"
+            },
+            {
+                "name":"DevOps",
+                "link":"/services/#dev-ops"
+            },
+            {
+                "name":"Cloud Consulting",
+                "link":"/services/#cloud-consulting"
             },
             {
                 "name":"Digital Marketing",
-                "link":"/services/digital-marketing"
-            },
-            {
-                "name":"Hire a Team",
-                "link":"/services/hire-a-team"
+                "link":"/services/#digital-marketing"
             }
         ]
     },

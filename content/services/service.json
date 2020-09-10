@@ -7,15 +7,27 @@
             "name":"product-development",
             "subServices":[
                 {
-                    "title":"subService1",
-                    "description":"Sub Service Description",
-                    "link":"services/subservice1",
+                    "title":"Prototype Building",
+                    "description":"Our team pursues design thinking and sprints for efficacious product prototyping. Our team will comprehend your vision, business goals, and product idea. They further run research to come with valuable suggestions to build a practical product prototype. The product prototyping helps in validating the effectiveness of the idea compared to the market needs. This puts a building block of developing a product that sustains and grow.",
+                    "link":"services/prototype-building",
                     "image":"/images/icons/icon-03.svg"
                 },
                 {
-                    "title":"subService2",
-                    "description":"Sub Service Description",
-                    "link":"services/subservice2",
+                    "title":"MVP Development",
+                    "description":"The most important stage of the full cycle product development is MVP (Minimum Viable Product) development. Our team will create an effectual plan to build MVP with the most usable features, engaging designs, and alluring offerings. The rightly developed MVP will help in capturing the first segment of users that would become the long lasting paying customers and brand advocates.",
+                    "link":"services/mvp-development",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Product Roadmap",
+                    "description":"Our specialists will use the analytical expertise to identify the customer requirement and the most market fit features. Based on the data driven and innovative approach, our experienced and certified developers will build the whole product. UI and UX design, product development, software testing, and quality assurance will be carried out at this stage.",
+                    "link":"services/product-roadmap",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Scaling Up",
+                    "description":"Our immense knowledge of analyzing data extracted from highly powerful analytical tools will help you build and execute a scale up strategy and roadmap. We will discover the customer behaviour patterns and suggest scale up a strategy that will nail the market.",
+                    "link":"services/scaling-up",
                     "image":"/images/icons/icon-03.svg"
                 }
             ]
@@ -25,15 +37,159 @@
             "name":"analytics",
             "subServices":[
                 {
-                    "title":"subService1",
-                    "description":"Sub Service Description",
-                    "link":"services/subservice1",
+                    "title":"Predictive Analytics",
+                    "description":"With the help of Machine Learning and AI, we can help you with the metrics beforehand to make right business decisions.",
+                    "link":"services/predictive-analytics",
                     "image":"/images/icons/icon-03.svg"
                 },
                 {
-                    "title":"subService2",
-                    "description":"Sub Service Description",
-                    "link":"services/subservice2",
+                    "title":"Recommendation Systems",
+                    "description":"Recommending right offerings at right time is the key to any business. We use power of AI and data driven domain knowledge to scale using right recommendations.",
+                    "link":"services/recommendation-systems",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Conversational AI",
+                    "description":"Some descriptions go here...",
+                    "link":"services/conversational-ai",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Computer Vision",
+                    "description":"Some descriptions go here...",
+                    "link":"services/computer-vision",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Business Intelligence",
+                    "description":"Some descriptions go here...",
+                    "link":"services/business-intelligence",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Web and App Analytics",
+                    "description":"Some descriptions go here...",
+                    "link":"services/web-analytics",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"A/B Testing",
+                    "description":"Some descriptions go here...",
+                    "link":"services/a-b-testing",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        },
+        {
+            "title":"Automation",
+            "name":"automation",
+            "subServices":[
+                {
+                    "title":"Web Scraping",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/web-scraping",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"RPA",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/rpa",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Workflow Management",
+                    "description":"Some descriptions go here...",
+                    "link":"services/workflow-management",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        },
+        {
+            "title":"Cloud Consulting",
+            "name":"cloud-consulting",
+            "subServices":[
+                {
+                    "title":"Data Lake Management",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/data-lake-management",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Serverless Architecture",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/serverless-architecture",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"ETL",
+                    "description":"Some descriptions go here...",
+                    "link":"services/etl",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        },
+        {
+            "title":"DevOps",
+            "name":"dev-ops",
+            "subServices":[
+                {
+                    "title":"Auto Scaling",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/auto-scaling",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"CI/CD",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/ci-cd",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Resource Monitoring",
+                    "description":"Some descriptions go here...",
+                    "link":"services/resource-monitoring",
+                    "image":"/images/icons/icon-03.svg"
+                }
+            ]
+        },
+        {
+            "title":"Digital Marketing",
+            "name":"digital-marketing",
+            "subServices":[
+                {
+                    "title":"App Store Optimization",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/app-store-optimization",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Search Engine Optimization",
+                    "description":"Some Descriptions need to feel in",
+                    "link":"services/seo",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Social Media Optimization",
+                    "description":"Some descriptions go here...",
+                    "link":"services/smo",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Pay Per Click",
+                    "description":"Some descriptions go here...",
+                    "link":"services/ppc",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Creative Design",
+                    "description":"Some descriptions go here...",
+                    "link":"services/creative-design",
+                    "image":"/images/icons/icon-03.svg"
+                },
+                {
+                    "title":"Content Marketing",
+                    "description":"Some descriptions go here...",
+                    "link":"services/content-marketing",
                     "image":"/images/icons/icon-03.svg"
                 }
             ]

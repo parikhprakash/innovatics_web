@@ -2,11 +2,27 @@
     "services":[
         {
             "name":"Product Development",
-            "link":"services/product-development"
+            "link":"services/#product-development"
         },
         {
             "name":"Analytics",
-            "link":"services/analytics"
+            "link":"/services/#analytics"
+        },
+        {
+            "name":"Automation",
+            "link":"/services/#automation"
+        },
+        {
+            "name":"DevOps",
+            "link":"/services/#dev-ops"
+        },
+        {
+            "name":"Cloud Consulting",
+            "link":"/services/#cloud-consulting"
+        },
+        {
+            "name":"Digital Marketing",
+            "link":"/services/#digital-marketing"
         }
     ],
     "resources":[
