@@ -1,69 +1,63 @@
-import React from 'react'
-import HomeCTA from '../components/home_cta'
-import SEO from '../components/seo'
-import Layout from '../components/layout'
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import {withPrefix} from 'gatsby'
-const BlogPage = ({data,location})=>{
-    console.log(data);
-    return (
-      <Layout location={location} title="Blogs">
-      <SEO title="Blogs" />
-      <main className="page-wrappper">
-            <div className="axil-blog-area ax-section-gap bg-color-white">
-                <div className="container">
-                    <div className="row row--40">
-                       
-                        <div className="col-lg-8 col-md-12 col-12">
-                        {
-                            data.allMarkdownRemark.edges.map((item,index)=>{
-                                return (
-                                <div className="axil-blog-list wow move-up">
-                                <div className="blog-top">
-                                    <h3 className="title"><a href={withPrefix("blogs"+item.node.fields.slug)}>{item.node.frontmatter.title}</a></h3>
-                                    <div className="author">
-                                        <div className="author-thumb">
-                                            <img src={withPrefix(item.node.frontmatter.authorImage)} alt="Blog Author"/>
-                                        </div>
-                                        <div className="info">
-                                            <h6>{item.node.frontmatter.author}</h6>
-                                            <ul className="blog-meta">
-                                                <li>{item.node.frontmatter.date}</li>
-                                                {/* <li>9 min to read</li> */}
-                                            </ul>
+const blogDetailTemplate = ({data,pageContext,location})=>{
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
+  return(
+        <>
+            <Layout>
+            <SEO
+                title={post.frontmatter.title}
+                description={post.frontmatter.description || post.excerpt}
+            />
+            <main class="page-wrapper">
+            
+            <div class="axil-blog-area ax-section-gap bg-color-white">
+                <div class="container">
+                    <div class="row row--40">
+                        <div class="col-lg-8 col-md-12 col-12">
+                            <div class="axil-blog-details-area">
+                                <div class="wrapper">
+                                    <div class="blog-top">
+                                        <h3 class="title">{post.frontmatter.title}</h3>
+                                        <div class="author">
+                                            <div class="author-thumb">
+                                                <img src={withPrefix(post.frontmatter.authorImage)} alt="Blog Author"/>
+                                            </div>
+                                            <div class="info">
+                                                <h6>{post.frontmatter.author}</h6>
+                                                <ul class="blog-meta">
+                                                    <li>{post.frontmatter.date}</li>
+                                                    
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="thumbnail mb--60 mb_sm--20 mb_md--20">
+                                        <img class="w-100" src={withPrefix(post.frontmatter.blogImage)} alt="Blog Images"/>
+                                    </div>
+                                    <div class="content mb--40 mb_sm--20 mb_md--20">
+                                      <section dangerouslySetInnerHTML={{ __html: post.html }} />    
+                                    </div>
+                                    
+                                    <div class="blog-share d-flex flex-wrap align-items-center mb--80 mb_sm--30 mb">
+                                        <span class="text">Share on:</span>
+                                        <ul class="social-share d-flex">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div className="thumbnail">
-                                    <a href={withPrefix("blogs"+item.node.fields.slug)}>
-                                        {/* {console.log(item.node.frontmatter.blogImage)} */}
-                                        <img className="w-100" src={withPrefix(item.node.frontmatter.blogImage)} alt="Blog Images"/>
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <p>{item.node.excerpt}</p>
-                                    <a className="axil-button btn-large btn-transparent" href={withPrefix("blogs"+item.node.fields.slug)}><span
-                                            className="button-text">Read More</span><span className="button-icon"></span></a>
-                                </div>
-                            </div>)
-                            })
-                        }
-                            
-
+                            </div>
                         </div>
+                        
                         <div className="col-lg-4 col-md-12 col-12 mt_md--40 mt_sm--40">
                             
                             <div className="axil-blog-sidebar">
-
-                                
-                                {/* <div className="axil-single-widget search">
-                                    <h4 className="title mb--30">Search</h4>
-                                    <div className="inner">
-                                        <form action="#" className="blog-search">
-                                            <input type="text" placeholder="Search…">
-                                            <button className="search-button"><i className="fal fa-search"></i></button>
-                                        </form>
-                                    </div>
-                                </div> */}
                                 
                                 <div className="axil-single-widget category mt--80 mt_sm--30 mt_md--30 mt_lg--40">
                                     <h4 className="title mb--30">Categories</h4>
@@ -75,13 +69,7 @@ const BlogPage = ({data,location})=>{
                                                         <li><a href={"tags/"+item.tag}>{item.tag + "(" + item.totalCount  +")"}</a></li>
                                                     )
                                                 })
-                                            }
-                                            
-                                            {/* <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Information technology</a></li>
-                                            <li><a href="#">New ideas</a></li>
-                                            <li><a href="#">Uncategorized</a></li>
-                                            <li><a href="#">Marketing & branding</a></li> */}
+                                            }                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -124,40 +112,44 @@ const BlogPage = ({data,location})=>{
                                             </div>
                                         </div>
                                         )
-                                    })}
-                                        
-                                        
-                                        
-                                        
+                                    })}    
                                     </div>
                                 </div>
-                              
-                                
-                                
-
                             </div>
                             
                         </div>
-                    </div>
+
+                        </div>
                 </div>
             </div>
             
-            
-            
 
         </main>
-      <HomeCTA></HomeCTA>
-    </Layout>
+            </Layout>
+        </>
     )
 }
 
-export default BlogPage
+export default blogDetailTemplate
 
 export const pageQuery = graphql`
-  query {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            author
+            authorImage
+            blogImage
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -184,11 +176,5 @@ export const pageQuery = graphql`
           totalCount
         }
       }
-    
   }
 `
-// query MyQuery {
-
-
-    
-     

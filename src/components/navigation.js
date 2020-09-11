@@ -34,7 +34,7 @@ const Navigation = ({menus})=>{
                     <div className="row align-items-center">
                         <div className="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-8 header-left">
                             <div className="logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <Image fixed={data.logo.childImageSharp.fixed}></Image>
                                 </a>
                             </div>

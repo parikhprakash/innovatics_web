@@ -8,7 +8,7 @@ const Footer = ({menuItems})=>{
                 <div className="ft-social-icon-wrapper ax-section-gapTop">
                     <div className="container">
                         <div className="row">
-                            <div classNameName="col-lg-12">
+                            <div className="col-lg-12">
                                 <ul className="ft-social-share d-flex justify-content-center liststyle flex-wrap">
                                     <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i className="fab fa-twitter"></i></a></li>
