@@ -75,6 +75,25 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/vendor/modernizr.min.js', // Change to the script filename
+      },
+    }
+    ,
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/vendor/jquery.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/vendor/bootstrap.min.js', // Change to the script filename
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

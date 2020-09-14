@@ -3,7 +3,7 @@ import HomeCTA from '../components/home_cta'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import {withPrefix} from 'gatsby'
-
+import JSONData from '../../content/casestudy/case-studies.json'
 const CaseStudyPage = ({data,location})=>{
     return(
         <>
@@ -15,9 +15,8 @@ const CaseStudyPage = ({data,location})=>{
                     <div className="row align-items-center">
                         <div className="col-lg-6 order-2 order-lg-1 mt_md--30 mt_sm--30">
                             <div className="inner">
-                                <h2 className="title">Case study</h2>
-                                <p>A quick view of industry specific problems solved with design by the awesome team at
-                                    Keystroke.</p>
+                                <h2 className="title">{JSONData.title}</h2>
+                                <p>{JSONData.descriptions}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
@@ -46,165 +45,92 @@ const CaseStudyPage = ({data,location})=>{
             <div className="axil-featured-area ax-section-gap bg-color-lightest">
                 <div className="container">
 
+                    {
+                        JSONData.case_studies.map((item,index)=>{
+                            if(index%2 == 0){
+                                return(
+                                    <div className="row d-flex flex-wrap axil-featured row--0">
+                                    <div className="col-lg-6 col-xl-6 col-md-12 col-12">
+                                        <div className="thumbnail">
+                                            <a href={withPrefix("/case-study/"+item.slug)}>
+                                                <img className="image w-100 paralax-image" src={withPrefix(item.project_brief_image)} alt="Featured Images"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-xl-5 offset-xl-1 col-md-12 col-12 mt_md--40 mt_sm--40">
+                                        <div className="inner">
+                                            <div className="section-title text-left">
+                                                <span className="sub-title extra04-color wow">featured case study</span>
+                                                <h2 className="title wow"><a href={withPrefix("/case-study/"+item.slug)}>{item.title}</a></h2>
+                                                <p className="subtitle-2 wow" dangerouslySetInnerHTML={{ __html:item.problem_statement, }}/>
+                                                <a className="axil-button btn-large btn-transparent" href={withPrefix("/case-study/"+item.slug)}><span
+                                                        className="button-text">Read
+                                                        Case Study</span><span className="button-icon"></span></a>
+                                            </div>
+                                            <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
+                                                {
+                                                    item.results.map((result_item,ind)=>{
+                                                        return(
+                                                                <div className="single-counterup counterup-style-1">
+                                                                    <h3 className="count">{result_item.metric_value}</h3>
+                                                                    <p>{result_item.metric_name}</p>
+                                                                </div>
+                                                        )
+                                                    })
+                                                }
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                     
-                    <div className="row d-flex flex-wrap axil-featured row--0">
-                        <div className="col-lg-6 col-xl-6 col-md-12 col-12">
-                            <div className="thumbnail">
-                                <a href="single-case-study.html">
-                                    <img className="image w-100 paralax-image" src="assets/images/featured/featured-image-01.jpg" alt="Featured Images"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-xl-5 offset-xl-1 col-md-12 col-12 mt_md--40 mt_sm--40">
-                            <div className="inner">
-                                <div className="section-title text-left">
-                                    <span className="sub-title extra04-color wow">featured case study</span>
-                                    <h2 className="title wow"><a href="single-case-study.html">Los Marineros</a></h2>
-                                    <p className="subtitle-2 wow">Donec metus lorem, vulputate at sapien sit amet, auctor
-                                        iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam
-                                        tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum
-                                        neque, elementum id dignissim et, imperdiet vitae mauris.</p>
-                                    <a className="axil-button btn-large btn-transparent" href="single-case-study.html"><span
-                                            className="button-text">Read
-                                            Case Study</span><span className="button-icon"></span></a>
-                                </div>
-                                <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count">15</h3>
-                                        <p>ROI increase</p>
+                                )
+                            }
+                            else{
+                                return(
+                                    <div className="row d-flex flex-wrap axil-featured axil-featured-left row--0  ax-section-gapTop">
+                                        <div className="col-lg-6 col-xl-5 col-md-12 col-12 mt_md--40 mt_sm--40 order-2 order-lg-1">
+                                            <div className="inner">
+                                                <div className="section-title text-left">
+                                                    <span className="sub-title extra04-color wow">featured case study</span>
+                                                    <h2 className="title wow"><a href={withPrefix("/case-study/"+item.slug)}>{item.title}</a></h2>
+                                                    <p className="subtitle-2 wow" dangerouslySetInnerHTML={{ __html:item.problem_statement, }}/>
+                                                    <a className="axil-button btn-large btn-transparent" href={withPrefix("/case-study/"+item.slug)}><span
+                                                            className="button-text">Read
+                                                            Case Study</span><span className="button-icon"></span></a>
+                                                </div>
+                                                <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
+                                                    
+                                                {
+                                                    item.results.map((result_item,ind)=>{
+                                                        return(
+                                                                <div className="single-counterup counterup-style-1">
+                                                                    <h3 className="count">{result_item.metric_value}</h3>
+                                                                    <p>{result_item.metric_name}</p>
+                                                                </div>
+                                                        )
+                                                    })
+                                                }
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 col-xl-6 offset-xl-1 col-md-12 col-12 order-1 order-lg-2">
+                                            <div className="thumbnail">
+                                                <a href={withPrefix("/case-study/"+item.slug)}>
+                                                    <img className="image w-100 paralax-image" src={withPrefix(item.project_brief_image)} alt="Featured Images"/>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count counter-k">60</h3>
-                                        <p>Monthly website visits</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div className="row d-flex flex-wrap axil-featured axil-featured-left row--0  ax-section-gapTop">
-                        <div className="col-lg-6 col-xl-5 col-md-12 col-12 mt_md--40 mt_sm--40 order-2 order-lg-1">
-                            <div className="inner">
-                                <div className="section-title text-left">
-                                    <span className="sub-title extra04-color wow">featured case study</span>
-                                    <h2 className="title wow"><a href="single-case-study.html">Whitehorse</a></h2>
-                                    <p className="subtitle-2 wow">Donec metus lorem, vulputate at sapien sit amet, auctor
-                                        iaculis
-                                        lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique
-                                        libero
-                                        at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id
-                                        dignissim et, imperdiet vitae mauris.</p>
-                                    <a className="axil-button btn-large btn-transparent" href="single-case-study.html"><span
-                                            className="button-text">Read
-                                            Case Study</span><span className="button-icon"></span></a>
-                                </div>
-                                <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count">15</h3>
-                                        <p>ROI increase</p>
-                                    </div>
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count counter-k">60</h3>
-                                        <p>Monthly website visits</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-xl-6 offset-xl-1 col-md-12 col-12 order-1 order-lg-2">
-                            <div className="thumbnail">
-                                <a href="single-case-study.html">
-                                    <img className="image w-100 paralax-image" src="assets/images/featured/featured-image-03.jpg" alt="Featured Images"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="row d-flex flex-wrap axil-featured row--0 ax-section-gapTop">
-                        <div className="col-lg-6 col-xl-6 col-md-12 col-12">
-                            <div className="thumbnail">
-                                <a href="single-case-study.html">
-                                    <img className="image w-100 paralax-image" src="assets/images/featured/featured-image-04.jpg" alt="Featured Images"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-xl-5 offset-xl-1 col-md-12 col-12 mt_md--40 mt_sm--40">
-                            <div className="inner">
-                                <div className="section-title text-left">
-                                    <span className="sub-title extra04-color wow">featured case study</span>
-                                    <h2 className="title wow"><a href="single-case-study.html">Periscope Data</a></h2>
-                                    <p className="subtitle-2 wow">Donec metus lorem, vulputate at sapien sit amet, auctor
-                                        iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam
-                                        tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum
-                                        neque, elementum id dignissim et, imperdiet vitae mauris.</p>
-                                    <a className="axil-button btn-large btn-transparent" href="single-case-study.html"><span
-                                            className="button-text">Read
-                                            Case Study</span><span className="button-icon"></span></a>
-                                </div>
-                                <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count">15</h3>
-                                        <p>ROI increase</p>
-                                    </div>
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count counter-k">60</h3>
-                                        <p>Monthly website visits</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="row d-flex flex-wrap axil-featured axil-featured-left row--0  ax-section-gapTop">
-                        <div className="col-lg-6 col-xl-5 col-md-12 col-12 mt_md--40 mt_sm--40 order-2 order-lg-1">
-                            <div className="inner">
-                                <div className="section-title text-left">
-                                    <span className="sub-title extra04-color wow">featured case study</span>
-                                    <h2 className="title wow"><a href="single-case-study.html">Exabeam</a></h2>
-                                    <p className="subtitle-2 wow">Donec metus lorem, vulputate at sapien sit amet, auctor
-                                        iaculis
-                                        lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique
-                                        libero
-                                        at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id
-                                        dignissim et, imperdiet vitae mauris.</p>
-                                    <a className="axil-button btn-large btn-transparent" href="single-case-study.html"><span
-                                            className="button-text">Read
-                                            Case Study</span><span className="button-icon"></span></a>
-                                </div>
-                                <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count">15</h3>
-                                        <p>ROI increase</p>
-                                    </div>
-                                    
-
-                                    
-                                    <div className="single-counterup counterup-style-1">
-                                        <h3 className="count counter-k">60</h3>
-                                        <p>Monthly website visits</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-xl-6 offset-xl-1 col-md-12 col-12 order-1 order-lg-2">
-                            <div className="thumbnail">
-                                <a href="single-case-study.html">
-                                    <img className="image w-100 paralax-image" src="assets/images/featured/featured-image-05.jpg" alt="Featured Images"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                                )
+                            }
+                        })
+                    }
 
                 </div>
             </div>

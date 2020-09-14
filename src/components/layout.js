@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   return (
       <div className="main-content">
         <Navigation></Navigation>
-        <main class="main-wrapper">{children}</main>
+        <main className="main-wrapper">{children}</main>
         <Footer></Footer>
         {/* <AllFooterJS></AllFooterJS> */}
       </div>

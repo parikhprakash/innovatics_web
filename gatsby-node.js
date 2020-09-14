@@ -1,9 +1,10 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-
+const caseStudyData = require('./content/casestudy/case-studies.json')
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
+  const caseStudyPage = path.resolve(`./src/templates/case-study-detail.js`)
   const blogPost = path.resolve(`./src/templates/blog-detail.js`)
   const result = await graphql(
     `
@@ -33,6 +34,18 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
+  const caseStudies = caseStudyData.case_studies
+
+  caseStudies.forEach((cs,index)=>{
+    const path = "case-study/" + cs.slug + "/";
+    createPage({
+      path: path,
+      component: caseStudyPage,
+      context:{
+        slug:cs.slug
+      }
+    })
+  })
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node

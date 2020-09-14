@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import JSONData from "../../content/menus/header.json"
+import {withPrefix} from 'gatsby'
 const Navigation = ({menus})=>{
     const data = useStaticQuery(graphql`
     query siteData {
@@ -46,13 +47,13 @@ const Navigation = ({menus})=>{
                                         {JSONData.map((item,index)=>{
                                             if(item.SubMenu.length > 0){
                                                 return (<li className="has-dropdown">
-                                                    <a href={item.link}>{item.name}</a>
+                                                    <a href={withPrefix(item.link)}>{item.name}</a>
                                                     <ul className="axil-submenu">
                                                         {
                                                             item.SubMenu.map((itemInner,indexInner)=>{
                                                                 return (
                                                                     <li>
-                                                                        <a href={itemInner.link}>
+                                                                        <a href={withPrefix(itemInner.link)}>
                                                                             {itemInner.name}
                                                                         </a>
                                                                     </li>
@@ -123,7 +124,7 @@ const Navigation = ({menus})=>{
                         <div className="col-lg-2 col-xl-3 col-md-6 col-sm-6 col-4 header-right">
 
                     
-                            <div className="axil-header-extra d-flex align-items-center justify-content-end">
+                            {/* <div className="axil-header-extra d-flex align-items-center justify-content-end">
                                
                                 <div className="ax-search-area ml--20">
                                     <a className="search-trigger" href="#"><i className="fas fa-search"></i></a>
@@ -154,7 +155,7 @@ const Navigation = ({menus})=>{
                                     </form>
                                 </div>
                                 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

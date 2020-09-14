@@ -1,0 +1,94 @@
+{
+    "title":"Case Study",
+    "descriptions":"",
+    "case_studies":[
+        {
+            "title":"Translate By Humans",
+            "slug":"translate-by-humans",
+            "project_brief":"Translate By Humans was looking for a technology partner that fit the following criteria:<ul> <li>Could take ownership of the project and provide regular updates</li>           <li>Highly agile design framework to assure swift product development</li>            <li>Extensive experience in building AI-ML solutions</li></ul></p>            <p>Innovatics offered a solution that covered all the criteria set forth by Translate By Humans. A dedicated team of five professionals worked full time on developing, testing and launching their visionary product. ",
+            "project_brief_image":"/case-study-images/case-study-banner1.png",
+            "problem_statement":"<p>To remain an industry leader, Translate By Humans wanted to improve turnaround time (TAT) in processing their translations for their clients. They wanted to achieve this without compromising on their accuracy and while maintaining their all-human process of offering language services. They aimed to use AI-ML solutions to create highly relevant translation memories that they could rely on to translate repeated segments of text. To do that, they required a solution that could identify and suggest the correct contextual match for translations, from a database of previously translated text by the company’s native language experts.</p>",
+            "problem_statement_image":"",
+            "solution":"<p>The Innovatics team built an AI-ML solution for creation and storage of translation memories. This AI solution can be used for more than 180 global languages.<p/> <p>Team Innovatics used various high-impact AI-ML technologies and built a highly scalable solution that stores segments of previously human-translated source text and its corresponding translation into the target language. When the same or a similar segment needs to be translated again, the tool suggests suitable translations, based on the contextual match. This reduces the time native language experts spend on processing segments of text that have already been translated by a human earlier.</p>",
+            "solution_image":"",
+            "process":[
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                },
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                },
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                }
+            ],
+            "results":[
+                {
+                    "metric_name":"Cost Reduction",
+                    "metric_description":"reduction in costs incurred",
+                    "metric_value":"22"
+                },
+                {
+                    "metric_name":"Reduced TAT",
+                    "metric_description":"reduction in average TAT ",
+                    "metric_value":"38"
+                },
+                {
+                    "metric_name":"Customer Satisfation",
+                    "metric_description":"improvement in customer satisfaction",
+                    "metric_value":"17"
+                }
+            ]
+        },
+        {
+            "title":"Translate By Humans 1",
+            "slug":"translate-by-humans-1",
+            "project_brief":"Translate By Humans was looking for a technology partner that fit the following criteria:<ul> <li>Could take ownership of the project and provide regular updates</li>           <li>Highly agile design framework to assure swift product development</li>            <li>Extensive experience in building AI-ML solutions</li></ul></p>            <p>Innovatics offered a solution that covered all the criteria set forth by Translate By Humans. A dedicated team of five professionals worked full time on developing, testing and launching their visionary product.",
+            "project_brief_image":"/case-study-images/case-study-banner1.png",
+            "problem_statement":"<p>To remain an industry leader, Translate By Humans wanted to improve turnaround time (TAT) in processing their translations for their clients. They wanted to achieve this without compromising on their accuracy and while maintaining their all-human process of offering language services. They aimed to use AI-ML solutions to create highly relevant translation memories that they could rely on to translate repeated segments of text. To do that, they required a solution that could identify and suggest the correct contextual match for translations, from a database of previously translated text by the company’s native language experts.</p>",
+            "problem_statement_image":"",
+            "solution":"<p>The Innovatics team built an AI-ML solution for creation and storage of translation memories. This AI solution can be used for more than 180 global languages.<p/> <p>Team Innovatics used various high-impact AI-ML technologies and built a highly scalable solution that stores segments of previously human-translated source text and its corresponding translation into the target language. When the same or a similar segment needs to be translated again, the tool suggests suitable translations, based on the contextual match. This reduces the time native language experts spend on processing segments of text that have already been translated by a human earlier.</p>",
+            "solution_image":"",
+            "process":[
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                },
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                },
+                {
+                    "step_title":"",
+                    "step_image":"",
+                    "step_description":""
+                }
+            ],
+            "results":[
+                {
+                    "metric_name":"Cost Reduction",
+                    "metric_description":"reduction in costs incurred",
+                    "metric_value":"22"
+                },
+                {
+                    "metric_name":"Reduced TAT",
+                    "metric_description":"reduction in average TAT ",
+                    "metric_value":"38"
+                },
+                {
+                    "metric_name":"Customer Satisfation",
+                    "metric_description":"improvement in customer satisfaction",
+                    "metric_value":"17"
+                }
+            ]
+        }
+    ]
+}

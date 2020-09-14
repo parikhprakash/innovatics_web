@@ -72,7 +72,8 @@ const SEO = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     >
-    
+    <script src={withPrefix("/js/vendor/jquery.js")}/>
+    <script src={withPrefix("/js/vendor/jquery.js")}/>
     </Helmet>
   )
 }
