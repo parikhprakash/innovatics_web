@@ -93,6 +93,114 @@ module.exports = {
       options: {
         src: '/js/vendor/bootstrap.min.js', // Change to the script filename
       },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/waypoints.min.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/wow.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/counterup.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/imagesloaded.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/isotope.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/tilt.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/anime.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/tweenmax.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/slipting.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/scrollmagic.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/addindicators.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/slick.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/youtube.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/countdown.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/scrollup.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/stickysidebar.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/contactform.js', // Change to the script filename
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/js/main.js', // Change to the script filename
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

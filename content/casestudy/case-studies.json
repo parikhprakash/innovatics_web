@@ -13,19 +13,19 @@
             "solution_image":"",
             "process":[
                 {
-                    "step_title":"",
+                    "step_title":"Step 1",
                     "step_image":"",
-                    "step_description":""
+                    "step_description":"Step1 Proces"
                 },
                 {
-                    "step_title":"",
+                    "step_title":"Step 2",
                     "step_image":"",
-                    "step_description":""
+                    "step_description":"Step2 Process"
                 },
                 {
-                    "step_title":"",
+                    "step_title":"Step 3",
                     "step_image":"",
-                    "step_description":""
+                    "step_description":"Step3 Process"
                 }
             ],
             "results":[

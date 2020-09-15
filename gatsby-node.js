@@ -6,6 +6,20 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const caseStudyPage = path.resolve(`./src/templates/case-study-detail.js`)
   const blogPost = path.resolve(`./src/templates/blog-detail.js`)
+  const blogTagPost = path.resolve(`./src/templates/blog-tag.js`)
+  const tagResult = await graphql(
+    `
+    {
+      tags:allMarkdownRemark {
+        group(field: frontmatter___tags) {
+          tag: fieldValue
+          totalCount
+        }
+      }
+    }
+    `
+  )
+  
   const result = await graphql(
     `
       {
@@ -35,6 +49,8 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
   const caseStudies = caseStudyData.case_studies
+  const tags = tagResult.data.tags.group
+
 
   caseStudies.forEach((cs,index)=>{
     const path = "case-study/" + cs.slug + "/";
@@ -47,6 +63,16 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
+  tags.forEach((tag,index)=>{
+    const path = "blogs/tags/" + tag.tag + "/"
+    createPage({
+      path: path,
+      component: blogTagPost,
+      context:{
+        tag:tag.tag
+      }
+    })
+  })
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
