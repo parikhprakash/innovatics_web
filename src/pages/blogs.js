@@ -72,7 +72,7 @@ const BlogPage = ({data,location})=>{
                                             {
                                                 data.tags.group.map((item,index)=>{
                                                     return(
-                                                        <li><a href={"tags/"+item.tag}>{item.tag + "(" + item.totalCount  +")"}</a></li>
+                                                        <li><a href={withPrefix("blogs/tags/"+item.tag)}>{item.tag + "(" + item.totalCount  +")"}</a></li>
                                                     )
                                                 })
                                             }

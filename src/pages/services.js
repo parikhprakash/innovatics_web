@@ -55,7 +55,7 @@ const InnovaticServices = ({ data, location }) => {
                         {
                             JSONData.sections.map((item,index)=>{
                                 return (
-                                    <li className="nav-item"><a className="nav-link smoth-animation active" href={"#" + item.name}>{item.title}</a></li>
+                                    <li className="nav-item"><a className={(index < 1)?"nav-link smoth-animation active":"nav-link smoth-animation"} href={"#" + item.name}>{item.title}</a></li>
                                 )
                             })
                         }
@@ -80,7 +80,7 @@ const InnovaticServices = ({ data, location }) => {
                                             item.subServices.map((itemSubService,innerIndex)=>{
                                                 return(
                                                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div className="axil-service text-left axil-control paralax-image active">
+                                            <div className={(innerIndex <1)?"axil-service text-left axil-control paralax-image active":"axil-service text-left axil-control paralax-image"}>
                                                 <div className="inner">
                                                     <div className="icon">
                                                         <div className="icon-inner">
@@ -89,7 +89,7 @@ const InnovaticServices = ({ data, location }) => {
                                                         </div>
                                                     </div>
                                                     <div className="content">
-                                                        <h4 className="title"><a href={itemSubService.link}>{itemSubService.title}</a></h4>
+                                                        <h4 className="title"><a href={withPrefix(itemSubService.link)}>{itemSubService.title}</a></h4>
                                                         <p>{itemSubService.description}</p>
                                                         <a className="axil-button" data-hover="Learn More" href={itemSubService.link}>Learn More</a>
                                                     </div>

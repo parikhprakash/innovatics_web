@@ -1,0 +1,84 @@
+{
+    "title":"Meet talent & experience",
+    "description":"We have a team of passionate developers, designers, business professionals, along with technical specialists. We thrive to bring value to the table for our clients by leveraging the power of various conventional and trending technologies.    Our experience and specialization in different technologies make us the best digital product development company to build any solution for any business. We are skilled in all leading technology sectors including Artificial Intelligence (AI), Machine Learning (ML), cloud computing, IoT (Internet of Things), mobile applications, web applications, Analytics, Business Intelligence (BI), and more. We know how to foster technology with business intelligence to build an invincible digital product.",
+    "team_description_title":"What Makes Us<br> So Special",
+    "team_description":"The foremost reason to choose us as your technology partner is to explore untapped opportunities for your business. Here are some more.<ul><li>Business-Centric</li><li>Promptness</li><li>Agility</li><li>Confidentiality</li><li>Dedication</li></ul>",
+    "metrics":[
+        {
+            "name":"Years Of Experience",
+            "value":"15"
+        },
+        {
+            "name":"Data Scientists",
+            "value":"3"
+        },
+        {
+            "name":"Projects Delivered",
+            "value":"50"
+        }
+    ],
+    "departments":[
+        {
+            "name":"Managment",
+            "id":"management",
+            "persons":[
+                {
+                    "name":"Brij Jardosh",
+                    "title":"CEO",
+                    "image":"/images/people/brij.jpg",
+                    "linkedin":""
+                },
+                {
+                    "name":"Prakash Parikh",
+                    "title":"CTO",
+                    "image":"/images/people/prakash.jpg",
+                    "linkedin":"https://www.linkedin.com/in/parikhprakash/"
+                },
+                {
+                    "name":"Bhavin Mistry",
+                    "title":"Non Executive Director",
+                    "image":"/images/people/bhavin.jpg",
+                    "linkedin":""
+                },
+                {
+                    "name":"Mitika Mistry",
+                    "title":"Non Executive Director",
+                    "image":"/images/people/mitika.jpg",
+                    "linkedin":""
+                }
+
+            ]
+        },
+        {
+            "name":"Advisory Board",
+            "id":"advisory-board",
+            "persons":[
+                {
+                    "name":"Nagendra Shastry",
+                    "title":"Advisory Borad Member",
+                    "image":"/images/people/nagendra.jpg",
+                    "linkedin":""
+                },
+                {
+                    "name":"Rahul Nawab",
+                    "title":"Advisory Board Member",
+                    "image":"/images/people/rahul.jpg",
+                    "linkedin":""
+                }
+            ]
+        },
+        {
+            "name":"Sales",
+            "id":"sales",
+            "persons":[
+                {
+                    "name":"Akash Jain",
+                    "title":"Business Development Head",
+                    "image":"/images/people/akash.jpg",
+                    "linkedin":""
+                }
+
+            ]
+        }
+    ]
+}
