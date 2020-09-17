@@ -1,0 +1,73 @@
+[
+
+    {
+        "service_title":"Predictive Analytics",
+        "slug":"predictive-analytics",
+        "service_image":"/images/service/predictive.png",
+        "service_description":"With the help of Machine Learning and AI, we can help you with the metrics beforehand to make right business decisions.",
+        "about_service_title":"Learn more about",
+        "about_service_description":"More HTML goes here..",
+        "process":{
+            "process_title":"Our Predictive Analytics Process",
+            "process_description":"Process description 2 to 3 lines",
+            "steps":[
+                {
+                    "name":"Data Preprocessing",
+                    "description":"Clean up, augmenting, sampling balance etc...",
+                    "image":"/images/service/preprocessing.png"
+                },
+                {
+                    "name":"Modeling",
+                    "description":"Try algorithms that works best under business constraints",
+                    "image":"/images/service/modeling.png"
+                },
+                {
+                    "name":"Validation",
+                    "description":"From simple train test split to out of sample.. validation of business justification also matters..",
+                    "image":"/images/service/validation.png"
+                },
+                {
+                    "name":"Hosting",
+                    "description":"Make the model serve the prediction and integrate to existing system",
+                    "image":"/images/service/hosting.png"
+                }
+            ]
+        }
+
+    },
+    {
+        "service_title":"Recommnedation Systems",
+        "slug":"recommendation-systems",
+        "service_image":"/images/service/recommendation.png",
+        "service_description":"Recommending right offerings at right time is the key to any business. We use power of AI and data driven domain knowledge to scale using right recommendations.",
+        "about_service_title":"Learn more about",
+        "about_service_description":"More HTML goes here..",
+        "process":{
+            "process_title":"Our Predictive Analytics Process",
+            "process_description":"Process description 2 to 3 lines",
+            "steps":[
+                {
+                    "name":"Data Preprocessing",
+                    "description":"Clean up, augmenting, sampling balance etc...",
+                    "image":"/images/service/preprocessing.png"
+                },
+                {
+                    "name":"Modeling",
+                    "description":"Try algorithms that works best under business constraints",
+                    "image":"/images/service/modeling.png"
+                },
+                {
+                    "name":"Validation",
+                    "description":"From simple train test split to out of sample.. validation of business justification also matters..",
+                    "image":"/images/service/validation.png"
+                },
+                {
+                    "name":"Hosting",
+                    "description":"Make the model serve the prediction and integrate to existing system",
+                    "image":"/images/service/hosting.png"
+                }
+            ]
+        }
+
+    }
+]

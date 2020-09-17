@@ -14,8 +14,7 @@ const HomeCTA = ({})=>{
                                 className="button-text">Estimate Project</span><span className="button-icon"></span></a>
                                     <div className="callto-action">
                                         <span className="text wow" data-splitting>Or call us now</span>
-                                        <span className="wow" data-splitting><i className="fal fa-phone-alt"></i> <a href="#">(123)
-                                    456 7890</a></span>
+                                        <span className="wow" data-splitting><i className="fal fa-phone-alt"></i> <a href="#">+91 9558826127</a></span>
                                     </div>
                                 </div>
                             </div>

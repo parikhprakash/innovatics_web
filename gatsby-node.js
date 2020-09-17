@@ -1,12 +1,14 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const caseStudyData = require('./content/casestudy/case-studies.json')
+const serviceDetailData = require('./content/service-details/service.json')
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const caseStudyPage = path.resolve(`./src/templates/case-study-detail.js`)
   const blogPost = path.resolve(`./src/templates/blog-detail.js`)
   const blogTagPost = path.resolve(`./src/templates/blog-tag.js`)
+  const serviceDetailPage = path.resolve('./src/templates/service-details.js')
   const tagResult = await graphql(
     `
     {
@@ -50,7 +52,18 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMarkdownRemark.edges
   const caseStudies = caseStudyData.case_studies
   const tags = tagResult.data.tags.group
+  const serviceDetails = serviceDetailData
 
+  serviceDetails.forEach((sd,index)=>{
+    const path = "services/" + sd.slug + "/"
+    createPage({
+      path:path,
+      component:serviceDetailPage,
+      context:{
+        slug:sd.slug
+      }
+    })
+  })
 
   caseStudies.forEach((cs,index)=>{
     const path = "case-study/" + cs.slug + "/";
