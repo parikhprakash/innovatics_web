@@ -1,0 +1,22 @@
+{
+    "title_form":"Get a Free Quote Now!",
+    "phone_number":"+91 9558826127",
+    "phone_number_desc":"Our customer care is open from Mon-Sat, 10:00 am to 9:00 pm",
+    "email":"sales@teaminnovatics.com",
+    "email_desc":"Our support team will get back to in 48-h during standard business hours.",
+    "offices":[
+        {
+            "location":"Ahmedabad - HQ",
+            "image":"/images/inner-image/contact/contact-01.jpg",
+            "address":"904, Dev Auram, Satellite<br> India",
+            "maps_url":"https://goo.gl/maps/CMNr7RBLop4YK8ge7"
+        },
+        {
+            "location":"Sydney",
+            "image":"/images/inner-image/contact/contact-01.jpg",
+            "address":"Some Address Goes Here <br> Australia",
+            "maps_url":"https://goo.gl/maps/CMNr7RBLop4YK8ge7"
+        }
+    ]
+
+}

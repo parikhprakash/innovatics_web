@@ -1,0 +1,25 @@
+{
+    "title":"About Us",
+    "description":"<p>We, Innovatics, aim to position our company as one of the foremost digital product development companies in the world.</p><p>After catering to global customers with various IT services under name of <a href='#'>Bit01</a> for more than a 2 decades, we come with a unique idea of identifying the notion of customer behavior so we can build a digital product that is loved by all. With in-depth research and technical expertise, our team can recognize what kind of business product will put the company’s customers in the “Aw” mode.</p><p>Whether you want to simplify your complex business process or you want to build a complex product that is unique in your industry, we cover you all. We are versed in transforming businesses digitally as well as transforming business dreams into a working reality.</p><p>We amalgamate bleeding edge technology, appealing user interface, supreme business intelligence, unparalleled functional robustness, and our rich business experience with diversified businesses, including the Fortune 500 companies to benefit our clients and partners. We can develop a working solution that can resolve any simple to complex challenges for your business and/or customers.</p>",
+    "image":"/images/aboutus.png",
+    "values_title":"Why should you work with us?",
+    "values_description":"The foremost reason to choose us as your technology partner is to explore untapped opportunities for your business. Here are some more.",
+    "values":[
+        {
+            "title":"Business-Centric",
+            "description":"We work as your partner and not as yet another service provider. This way, we ensure that we give everything to build a victorious solution for you."
+        },
+        {
+            "title":"Promptness",
+            "description":"Our approach of taking prompt actions in the goodwill of our clients is our USP. We make sure to assist clients with our skills and knowledge towards the win."
+        },
+        {
+            "title":"Confidentiality",
+            "description":"We understand the necessity of secrecy of your innovative business ideas and information. Thus, we always keep all information confidential with a signed NDA"
+        },
+        {
+            "title":"Dedication",
+            "description":"We do not take your business as project. Our team involve themselves equally as you to understand your need and deliver your dreams."
+        }
+    ]
+}

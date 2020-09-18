@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {withPrefix} from 'gatsby'
 import JSONData from "../../content/casestudy/case-studies.json"
-
+import HomeCTA from "../components/home_cta"
 const caseStudyDetailTemplate = ({data,pageContext,location})=>{
     var caseStudyData = null;
     JSONData.case_studies.forEach((item,index)=>{
@@ -253,6 +253,7 @@ const caseStudyDetailTemplate = ({data,pageContext,location})=>{
                         </div>
                     </main>
                     {/* <!-- End Page Wrapper --> */}
+        <HomeCTA></HomeCTA>
         </Layout>
         </>
     )

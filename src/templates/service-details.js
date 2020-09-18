@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import {withPrefix} from 'gatsby'
 import JSONData from "../../content/service-details/service.json"
 import ServiceProcess from '../components/service-process'
+import HomeCTA from "../components/home_cta"
 const caseStudyDetailTemplate = ({data,pageContext,location})=>{
     var serviceData = null;
     JSONData.forEach((item,index)=>{
@@ -86,6 +87,7 @@ const caseStudyDetailTemplate = ({data,pageContext,location})=>{
             {/* <!-- End Call To Action --> */}
 
         </div>
+        <HomeCTA></HomeCTA>
         </Layout>
         </>
     )

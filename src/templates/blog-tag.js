@@ -3,6 +3,7 @@ import HomeCTA from '../components/home_cta'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import {withPrefix} from 'gatsby'
+
 const BlogTagPage = ({data,location})=>{
     console.log(data);
     return (

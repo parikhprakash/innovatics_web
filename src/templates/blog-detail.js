@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {withPrefix} from 'gatsby'
+import HomeCTA from "../components/home_cta"
 const blogDetailTemplate = ({data,pageContext,location})=>{
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -125,6 +126,7 @@ const blogDetailTemplate = ({data,pageContext,location})=>{
             
 
         </main>
+        <HomeCTA></HomeCTA>
             </Layout>
         </>
     )
